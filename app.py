@@ -35,8 +35,8 @@ app.layout = html.Div(children=[
                 dcc.Input(id='TotalSF', value=2000, type='number', min=100, max=5000, step=1),
                 html.Div('Single Family Home:'),
                 dcc.Input(id='SingleFam', value=0, type='number', min=0, max=1, step=1),
-                html.Div('Overall Condition:'),
-                dcc.Input(id='OverallCond', value=0, type='number', min=0, max=1, step=1),
+                html.Div('Overall Condition(Rating 1-10):'),
+                dcc.Input(id='OverallCond', value=0, type='number', min=1, max=10, step=1),
 
             ], className='four columns'),
             html.Div([
